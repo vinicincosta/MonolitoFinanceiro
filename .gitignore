@@ -1,0 +1,69 @@
+# ===== Delphi: binários gerados pelo compilador =====
+*.exe
+*.dll
+*.bpl
+*.bpi
+*.dcp
+*.so
+*.apk
+*.drc
+*.map
+*.dres
+*.rsm
+*.tds
+*.dcu
+*.lib
+*.a
+*.o
+*.ocx
+*.obj
+*.res
+
+# ===== Delphi: arquivos locais da IDE =====
+*.local
+*.identcache
+*.projdata
+*.tvsconfig
+*.dsk
+*.stat
+*.~*
+*.dsv
+*.otares
+
+# ===== Delphi: pastas de histórico/backup =====
+__history/
+__recovery/
+
+# ===== Pastas de saída do build =====
+Win32/
+Win64/
+Win64x/
+OSX32/
+OSX64/
+OSXARM64/
+Android/
+Android64/
+iOSDevice32/
+iOSDevice64/
+iOSSimulator/
+Linux64/
+Debug/
+Release/
+
+# ===== Logs, temporários e dumps =====
+*.log
+*.tmp
+*.bak
+*.map
+
+# ===== Arquivos sensíveis (credenciais de banco, configs locais) =====
+*.ini
+*.env
+config.local.*
+
+# ===== Sistema operacional / editores =====
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
