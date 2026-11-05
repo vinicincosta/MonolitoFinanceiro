@@ -67,3 +67,6 @@ desktop.ini
 .DS_Store
 .vscode/
 .idea/
+# Arquivos temporários do Delphi
+**/__history/
+**/__recovery/
