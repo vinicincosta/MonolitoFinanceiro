@@ -21,6 +21,7 @@ type
     imgIniciando: TImage;
     imgConfiguracoes: TImage;
     procedure Timer1Timer(Sender: TObject);
+
   private
     procedure atualizarStatus (Mensagem : String; Imagem : TImage);
 
@@ -40,6 +41,8 @@ begin
   lblStatus.Caption := Mensagem;
   Imagem.Visible := True;
 end;
+
+
 
 procedure TformSplash.Timer1Timer(Sender: TObject);
 begin

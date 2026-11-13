@@ -8,67 +8,57 @@ inherited formUsuarios: TformUsuarios
     ExplicitHeight = 534
     inherited cardCadastro: TCard
       StyleElements = [seFont, seClient, seBorder]
-      ExplicitWidth = 833
-      ExplicitHeight = 532
+      ExplicitLeft = 1
       object Label2: TLabel [0]
         Left = 40
         Top = 48
-        Width = 47
-        Height = 21
+        Width = 54
+        Height = 25
         Caption = 'Nome'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -16
+        Font.Height = -19
         Font.Name = 'Segoe UI'
         Font.Style = [fsBold]
         ParentFont = False
       end
       object Label3: TLabel [1]
         Left = 40
-        Top = 82
-        Width = 43
-        Height = 21
+        Top = 92
+        Width = 51
+        Height = 25
         Caption = 'Login'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -16
+        Font.Height = -19
         Font.Name = 'Segoe UI'
         Font.Style = [fsBold]
         ParentFont = False
       end
       object Label4: TLabel [2]
         Left = 40
-        Top = 136
-        Width = 47
-        Height = 21
+        Top = 168
+        Width = 55
+        Height = 25
         Caption = 'Status'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -16
+        Font.Height = -19
         Font.Name = 'Segoe UI'
         Font.Style = [fsBold]
         ParentFont = False
       end
       inherited Panel1: TPanel
         StyleElements = [seFont, seClient, seBorder]
-        ExplicitTop = 440
-        ExplicitWidth = 833
-        inherited btnCancelar: TButton
-          ExplicitLeft = 717
-        end
-        inherited btnSalvar: TButton
-          Caption = 'dfdfd'
-          ExplicitLeft = 602
-        end
       end
       object status: TToggleSwitch
         Left = 120
-        Top = 137
-        Width = 130
-        Height = 23
+        Top = 170
+        Width = 147
+        Height = 27
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -16
+        Font.Height = -19
         Font.Name = 'Segoe UI'
         Font.Style = []
         ParentFont = False
@@ -77,27 +67,47 @@ inherited formUsuarios: TformUsuarios
       end
       object editNome: TEdit
         Left = 120
-        Top = 50
-        Width = 265
-        Height = 23
+        Top = 40
+        Width = 441
+        Height = 33
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
         TabOrder = 2
       end
       object editLogin: TEdit
         Left = 120
-        Top = 79
-        Width = 201
-        Height = 23
+        Top = 89
+        Width = 329
+        Height = 33
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
         TabOrder = 3
       end
     end
     inherited cardPesquisa: TCard
       StyleElements = [seFont, seClient, seBorder]
+      ExplicitWidth = 833
+      ExplicitHeight = 532
       inherited pnlPesquisa: TPanel
         StyleElements = [seFont, seClient, seBorder]
+        ExplicitWidth = 833
+        ExplicitHeight = 532
         inherited pnlPesquisar: TPanel
           StyleElements = [seFont, seClient, seBorder]
+          ExplicitWidth = 833
           inherited Label1: TLabel
             StyleElements = [seFont, seClient, seBorder]
+          end
+          inherited btnPesquisar: TButton
+            ExplicitLeft = 717
           end
           inherited editPesquisar: TEdit
             Text = ''
@@ -106,9 +116,20 @@ inherited formUsuarios: TformUsuarios
         end
         inherited pnlbotoes: TPanel
           StyleElements = [seFont, seClient, seBorder]
+          ExplicitTop = 440
+          ExplicitWidth = 833
+          inherited btnFechar: TButton
+            ExplicitLeft = 717
+          end
+          inherited btnExcluir: TButton
+            ExplicitLeft = 231
+            ExplicitTop = 1
+          end
         end
         inherited pnlGrid: TPanel
           StyleElements = [seFont, seClient, seBorder]
+          ExplicitWidth = 833
+          ExplicitHeight = 340
           inherited DBGrid1: TDBGrid
             DataSource = DataSource2
             PopupMenu = PopupMenu1

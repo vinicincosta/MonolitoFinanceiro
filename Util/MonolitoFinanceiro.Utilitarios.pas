@@ -13,6 +13,7 @@ type
    TUtilitario = class
       class function GetId : String;
       class function LikeFind(Pesquisar : String; Grid : TDBGrid) : String;
+      class function FormatoMoeda(aValeu : Currency) : String ;
 
    end;
 implementation
@@ -20,6 +21,13 @@ implementation
 uses
   System.SysUtils, MonolitoFinanceiro.View.CadastroPadrao;
 { TUtilitario }
+
+class function TUtilitario.FormatoMoeda(aValeu: Currency): String;
+begin
+
+  // aparecer o símbolo da moeda na formCaixaResumo.
+  Result := Format('%m', [aValeu]);
+end;
 
 class function TUtilitario.GetId: String;
 begin

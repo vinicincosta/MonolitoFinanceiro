@@ -274,4 +274,7 @@ inherited formCaixa: TformCaixa
       end
     end
   end
+  inherited DataSource2: TDataSource
+    DataSet = DMcaixa.cdsCaixa
+  end
 end

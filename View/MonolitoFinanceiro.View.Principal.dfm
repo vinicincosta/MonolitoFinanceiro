@@ -27,8 +27,8 @@ object FrmPrincipal: TFrmPrincipal
       item
         Width = 300
       end>
-    ExplicitTop = 544
-    ExplicitWidth = 1063
+    ExplicitTop = 543
+    ExplicitWidth = 1056
   end
   object MainMenu1: TMainMenu
     Left = 184
@@ -49,9 +49,17 @@ object FrmPrincipal: TFrmPrincipal
     end
     object menuRelatorios: TMenuItem
       Caption = 'Relat'#243'rios'
+      object menuResumoCaixa: TMenuItem
+        Caption = 'Resumo do Caixa'
+        OnClick = menuResumoCaixaClick
+      end
     end
     object menuAjuda: TMenuItem
       Caption = 'Ajuda'
+    end
+    object menuSair: TMenuItem
+      Caption = 'Sair'
+      OnClick = menuSairClick
     end
   end
   object Timer1: TTimer

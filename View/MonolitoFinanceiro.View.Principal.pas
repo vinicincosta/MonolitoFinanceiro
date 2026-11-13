@@ -19,10 +19,14 @@ type
     Timer1: TTimer;
     Financeiro1: TMenuItem;
     caixa1: TMenuItem;
+    menuResumoCaixa: TMenuItem;
+    menuSair: TMenuItem;
     procedure menuUsuariosClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure caixa1Click(Sender: TObject);
+    procedure menuResumoCaixaClick(Sender: TObject);
+    procedure menuSairClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,7 +44,7 @@ uses
   MonolitoFinanceiro.Model.Usuarios,
   MonolitoFinanceiro.View.Usuarios,
   MonolitoFinanceiro.View.RedefinirSenha,
-  MonolitoFinanceiro.View.Caixa;
+  MonolitoFinanceiro.View.Caixa, MonolitoFinanceiro.View.Caixa.Saldo;
 
 {$R *.dfm}
 
@@ -95,6 +99,16 @@ begin
 
   // Exibe o nome do usuário logado na barra de status
   StatusBar1.Panels.Items[1].Text :='Usuário: ' + DMusuarios.GetUsuarioLogado.NomeUsuarioLogado;
+end;
+
+procedure TFrmPrincipal.menuResumoCaixaClick(Sender: TObject);
+begin
+    formCaixaSaldo.ShowModal;
+end;
+
+procedure TFrmPrincipal.menuSairClick(Sender: TObject);
+begin
+  Application.Terminate;
 end;
 
 procedure TFrmPrincipal.menuUsuariosClick(Sender: TObject);
